@@ -1,0 +1,48 @@
+body {
+    background-color: #F7EFFA;
+    font-family: sans-serif;
+}
+
+.container {
+    width: max-content;
+    margin: auto;
+    background-color: white;
+    border-radius: 7px;
+    padding: 2%;
+}
+
+.containerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5D2795;
+}
+
+.container .btnAdd {
+    width: max-content;
+    height: max-content;
+    padding: 1%;
+    background-color: #8922ED;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.container .containerTable .table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tableTitle {
+    background-color: #E2C9F6;
+}
+
+.tableRow, .tableRow, .tableTitle, .tableContent {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td {
+    color: transparent;
+}
