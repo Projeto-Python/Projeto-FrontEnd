@@ -18,6 +18,55 @@ body {
     color: #5D2795;
 }
 
+.hidden {
+    display: none;
+}
+
+#formContainer {
+    width: 25%;
+    margin: auto;
+    background-color: #F7EFFA;
+    border-radius: 7px;
+    color: #5D2795;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+#formContainer .h2 {
+    text-align: center;
+}
+
+#formContainer .form {
+    display: flex;
+    flex-direction: column;
+    color: #5D2795;
+}
+
+.form label {
+    font-weight: bold;
+    font-size: large;
+}
+
+.form input {
+    margin-bottom: 2%;
+    outline: none;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.form .enviar {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    padding: 3%;
+    background-color: #8922ED;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
 .container .btnAdd {
     width: max-content;
     height: max-content;
@@ -38,11 +87,27 @@ body {
     background-color: #E2C9F6;
 }
 
-.tableRow, .tableRow, .tableTitle, .tableContent {
+.tableRow,
+.tableRow,
+.tableTitle,
+.tableContent {
     border: 1px solid black;
     padding: 10px;
 }
 
 td {
     color: transparent;
+}
+
+.btnAlt,
+.btnDel {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    padding: 5px;
+    background-color: #8922ED;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Missões</title>
+    <title>Missões Espaciais</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -12,9 +12,31 @@
     <div class="container">
         <div class="containerContent">
             <h1>Lista de Missões</h1>
-            <a href="cadastro.html" target="_blank" class="btnAdd">
-                <button class="btnAdd">Adicionar</button>
-            </a>
+            <button class="btnAdd" id="showFormBtn">Adicionar</button>
+        </div>
+        <div id="formContainer" class="hidden">
+            <h2 class="h2">Cadastrar Missão</h2>
+            <form class="form">
+                <label>Nome: </label>
+                <input type="text">
+                <label>Data de lançamento:</label>
+                <input type="datetime">
+                <label>Destino:</label>
+                <input type="text">
+                <label>Estado da missão:</label>
+                <input type="text">
+                <label>Tripulação:</label>
+                <input type="number">
+                <label>Carga útil:</label>
+                <input type="number">
+                <label>Duração da missão:</label>
+                <input type="text">
+                <label>Custo da missão:</label>
+                <input type="text">
+                <label>Status da missão</label>
+                <input type="text">
+                <button type="submit" class="enviar">Adicionar Missão</button>
+            </form>
         </div>
         <div class="containerTable">
             <table class="table">
@@ -29,6 +51,7 @@
                     <th class="tableTitle">Duração da missão</th>
                     <th class="tableTitle">Custo da missão</th>
                     <th class="tableTitle">Status da missão</th>
+                    <th class="tableTitle">Ações</th>
                 </tr>
                 <tr class="tableRow">
                     <td class="tableContent">.</td>
@@ -41,10 +64,14 @@
                     <td class="tableContent">.</td>
                     <td class="tableContent">.</td>
                     <td class="tableContent">.</td>
+                    <td class="tableContent">
+                        <button class="btnAlt">Alterar</button>
+                        <button class="btnDel">Excluir</button>
+                    </td>
                 </tr>
             </table>
         </div>
     </div>
 </body>
-
+    <script src="./js/script.js"></script>
 </html>
