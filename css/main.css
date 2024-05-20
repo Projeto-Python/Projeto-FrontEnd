@@ -36,18 +36,19 @@ body {
     text-align: center;
 }
 
-#formContainer .form {
+.form .fieldset {
+    border: none;
     display: flex;
     flex-direction: column;
     color: #5D2795;
 }
 
-.form label {
+.form .fieldset label {
     font-weight: bold;
     font-size: large;
 }
 
-.form input {
+.form .fieldset input {
     margin-bottom: 2%;
     outline: none;
     padding: 2%;
@@ -55,7 +56,7 @@ body {
     border-radius: 7px;
 }
 
-.form .enviar {
+.form .fieldset .enviar {
     width: max-content;
     height: max-content;
     margin: auto;

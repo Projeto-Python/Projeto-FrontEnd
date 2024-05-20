@@ -17,25 +17,27 @@
         <div id="formContainer" class="hidden">
             <h2 class="h2">Cadastrar Missão</h2>
             <form class="form">
-                <label>Nome: </label>
-                <input type="text">
-                <label>Data de lançamento:</label>
-                <input type="datetime">
-                <label>Destino:</label>
-                <input type="text">
-                <label>Estado da missão:</label>
-                <input type="text">
-                <label>Tripulação:</label>
-                <input type="number">
-                <label>Carga útil:</label>
-                <input type="number">
-                <label>Duração da missão:</label>
-                <input type="text">
-                <label>Custo da missão:</label>
-                <input type="text">
-                <label>Status da missão</label>
-                <input type="text">
-                <button type="submit" class="enviar">Adicionar Missão</button>
+                <fieldset class="fieldset">
+                    <label>Nome: </label>
+                    <input type="text" id="name">
+                    <label>Data de lançamento:</label>
+                    <input type="text" id="releaseData">
+                    <label>Destino:</label>
+                    <input type="text" id="endpoint">
+                    <label>Estado da missão:</label>
+                    <input type="text" id="missionState">
+                    <label>Tripulação:</label>
+                    <input type="text" id="crew">
+                    <label>Carga útil:</label>
+                    <input type="text" id="payload">
+                    <label>Duração da missão:</label>
+                    <input type="text" id="duration">
+                    <label>Custo da missão:</label>
+                    <input type="text" id="cost">
+                    <label>Status da missão</label>
+                    <input type="text" id="status">
+                    <button type="submit" class="enviar" id="meuFormulario">Adicionar Missão</button>
+                </fieldset>
             </form>
         </div>
         <div class="containerTable">
@@ -73,5 +75,7 @@
         </div>
     </div>
 </body>
-    <script src="./js/script.js"></script>
+<script src="./js/form.js"></script>
+<script src="./js/main.js"></script>
+
 </html>
