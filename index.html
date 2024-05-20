@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Missões Espaciais</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/deleteForm.css">
+    <link rel="stylesheet" href="./css/alterarForm.css">
 </head>
 
 <body>
@@ -67,15 +69,57 @@
                     <td class="tableContent">.</td>
                     <td class="tableContent">.</td>
                     <td class="tableContent">
-                        <button class="btnAlt">Alterar</button>
-                        <button class="btnDel">Excluir</button>
+                        <button class="btnAlt" id="altBtn">Alterar</button>
+                        <button class="btnDel" id="deleteBtn">Excluir</button>
                     </td>
                 </tr>
             </table>
         </div>
+        <div id="deleteFormContainer" class="hidden">
+            <h3 class="h3">Excluir Missão</h3>
+            <form class="deleteForm">
+                <fieldset class="deleteFieldset">
+                    <label>ID:</label>
+                    <input type="text" id="id">
+                    <button type="submit" id="delete">Deletar missão</button>
+                </fieldset>
+            </form>
+        </div>
+        <div id="altFormContainer" class="hidden">
+            <h2 class="h4">Alterar Informações</h2>
+            <form class="altForm">
+                <fieldset class="altFieldset">
+                    <label>Id:</label>
+                    <input type="text" id="altId">
+                    <label>Nome: </label>
+                    <input type="text" id="altName">
+                    <label>Data de lançamento:</label>
+                    <input type="text" id="altReleaseData">
+                    <label>Destino:</label>
+                    <input type="text" id="altEndpoint">
+                    <label>Estado da missão:</label>
+                    <input type="text" id="altMissionState">
+                    <label>Tripulação:</label>
+                    <input type="text" id="altCrew">
+                    <label>Carga útil:</label>
+                    <input type="text" id="altPayload">
+                    <label>Duração da missão:</label>
+                    <input type="text" id="altDuration">
+                    <label>Custo da missão:</label>
+                    <input type="text" id="altCost">
+                    <label>Status da missão</label>
+                    <input type="text" id="altStatus">
+                    <button type="submit" id="alter">Alterar informações</button>
+                </fieldset>
+            </form>
+        </div>
     </div>
 </body>
-<script src="./js/form.js"></script>
-<script src="./js/main.js"></script>
+<script src="./js/formAdicionarMissao.js"></script>
+<script src="./js/formDeletarMissao.js"></script>
+<script src="./js/formAlterarMissao.js"></script>
+<script src="./js/post.js"></script>
+<script src="./js/put.js"></script>
+<script src="./js/delete.js"></script>
 
 </html>

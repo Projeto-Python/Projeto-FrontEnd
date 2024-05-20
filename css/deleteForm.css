@@ -1,0 +1,62 @@
+#deleteFormContainer {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: #F7EFFA;
+    border-radius: 7px;
+    color: #5D2795;
+    padding: 2%;
+}
+
+#deleteFormContainer .h3 {
+    text-align: center;
+    font-size: x-large;
+}
+
+#deleteFormContainer .deleteFieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    color: #5D2795;
+}
+
+#deleteFormContainer .deleteFieldset label {
+    font-weight: bold;
+    font-size: large;
+}
+
+#deleteFormContainer .deleteFieldset input {
+    margin-bottom: 2%;
+    outline: none;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#deleteFormContainer .deleteFieldset #delete {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    padding: 3%;
+    background-color: #8922ED;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#delete {
+    width: max-content;
+    height: max-content;
+    padding: 1%;
+    background-color: #8922ED;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

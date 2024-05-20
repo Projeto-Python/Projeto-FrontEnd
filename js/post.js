@@ -33,11 +33,12 @@ document.getElementById("formContainer").addEventListener('submit', function(eve
     })
     // Tratamento da resposta da requisição
     .then(response => {
-        console.log('Sucesso ao precessar a requisição')
+        console.log('Sucesso ao criar missão');
         console.log(response.text());
     })
     .catch(error => {
-        console.log('Erro ao precessar a requisição')
+        console.log('Erro ao criar missão');
         console.log("Error:", error);
     });
 });
+

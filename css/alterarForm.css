@@ -1,0 +1,51 @@
+#altFormContainer {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: #F7EFFA;
+    border-radius: 7px;
+    color: #5D2795;
+    padding: 2%;
+}
+
+#altFormContainer .h4 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#altFormContainer .altFieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    color: #5D2795;
+}
+
+#altFormContainer .altFieldset label {
+    font-weight: bold;
+    font-size: large;
+}
+
+#altFormContainer .altFieldset input {
+    margin-bottom: 2%;
+    outline: none;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#alter {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    padding: 3%;
+    background-color: #8922ED;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
